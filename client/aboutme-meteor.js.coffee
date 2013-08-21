@@ -12,6 +12,10 @@ class App
     $("a#homeLink").on('click',  -> app.showPage('homePage', @))
     $("a#stuffLink").on('click',  -> app.showPage('stuffPage', @))
     $("a#contactLink").on('click', -> app.showPage('contactPage', @))
+    $("form").submit (e)->
+      $form = $(@)
+      e.preventDefault()
+      app.sendContact($form)
   
   showPage: (page_name, aTag) ->
     $("section.mainArticles article").css 'display', 'none'
@@ -22,6 +26,9 @@ class App
     linkTag.closest('ul').find('li').removeClass('glowbar-active')
     linkTag.closest('li').addClass('glowbar-active')
 
+  sendContact: (form)->
+    # alert(form.serialize())
+    alert("Your request sent")
 
 
 Meteor.startup ->

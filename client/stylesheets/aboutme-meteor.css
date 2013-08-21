@@ -83,7 +83,7 @@ header h1 .char6, header h1 .char7, header h1 .char8, header h1 .char9, header h
 section.mainArticles {
   font-family: "Roboto" sans-serif;
   width: 93.90625%;
-  max-width: 1000px;
+  max-width: 800px;
   min-height: 300px;
   margin: 10px auto;
   background-color: #f5f1f9;
