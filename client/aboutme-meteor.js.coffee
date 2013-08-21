@@ -32,6 +32,7 @@ class App
 
 
 Meteor.startup ->
+  process.env.MAIL_URL = 'smtp://postmaster%idochetrit.me:39-scrwymuw5@smtp.mailgun.org:587';
   app = new App()
   #'-46.875%'
 
@@ -47,10 +48,8 @@ sendMessage = (email, name, body)->
   Email.send
     from: email
     to: "idochetrit.dev@gmail.com"
-    replyTo: fromEmail || undefined
+    replyTo: email || undefined
     subject: "idochetrit.me: #{name} sent you this email !"
     text: body + "\n" + Meteor.absoluteUrl()
+
     
-if Meteor.isServer
-  Meteor.startup ->
-    process.env.MAIL_URL = 'smtp://postmaster%idochetrit.me:39-scrwymuw5@smtp.mailgun.org:587';
