@@ -12,10 +12,10 @@ class App
     $("a#homeLink").on('click',  -> app.showPage('homePage', @))
     $("a#stuffLink").on('click',  -> app.showPage('stuffPage', @))
     $("a#contactLink").on('click', -> app.showPage('contactPage', @))
-    $("form").submit (e)->
-      $form = $(@)
-      e.preventDefault()
-      app.sendContact($form)
+    # $("form").submit (e)->
+    #   $form = $(@)
+    #   e.preventDefault()
+    #   app.sendContact($form)
   
   showPage: (page_name, aTag) ->
     $("section.mainArticles article").css 'display', 'none'
@@ -34,3 +34,23 @@ class App
 Meteor.startup ->
   app = new App()
   #'-46.875%'
+
+if Meteor.isClient
+  Template.sendEmail.events
+    'click .send': ->
+      body = $("#contact_saying").val();
+      name = $("#contact_name").val();
+      email = $("#contact_email").val();
+      Meteor.call('sendMessage', email, name, body)
+
+sendMessage = (email, name, body)->
+  Email.send
+    from: email
+    to: "idochetrit.dev@gmail.com"
+    replyTo: fromEmail || undefined
+    subject: "idochetrit.me: #{name} sent you this email !"
+    text: body + "\n" + Meteor.absoluteUrl()
+    
+if Meteor.isServer
+  Meteor.startup ->
+    process.env.MAIL_URL = 'smtp://postmaster%idochetrit.me:39-scrwymuw5@smtp.mailgun.org:587';

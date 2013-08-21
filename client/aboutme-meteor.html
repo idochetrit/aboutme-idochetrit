@@ -33,52 +33,60 @@
   <div class="wrapper">
     <section class="mainArticles box">
       <article id="homePage">
-        <p>
-          Hey! My name is Ido Chetrit and I love programming. <3 <br />
-          I'm developing webapps in RubyOnRails, Nodejs (like this),
-           HTML5 (js/html/jquery) and more...
-        </p>
-        <p>
-          I also know to build native application in Java, C# and Objective-C. <br/> 
-          And building apps for Android and iOS! (^ ^)
-        </p>
-        <p><br/>
-          So if you need someone professional programmer to build your next project, contact me and i'll love to help you! :)
-        </p>
+        {{> meContent}}
       </article>
       <article id="stuffPage">
-        <span>Now your seeing my stuff...</span>
+        <span>Here goes the projects...</span>
       </article>
       <article id="contactPage">
-        <h3>Contact me</h3>
-        <form action="/contact" method="post" class="form-horizontal">
-          
-          <div class="control-group">
-            <label class="hide control-label">How people call you (name): </label>
-            <div class="controls">
-              <input placeholder="How people call you (name)" type="text" name="contact_name" required />
-            </div>
-          </div>
-          
-
-          <div class="control-group">
-            <label class="hide control-label">Way to communicate (email): </label>
-            <div class="controls">
-              <input placeholder="Way to communicate (email)" type="text" name="contact_email" required />
-            </div>
-          </div>
-
-          <div class="control-group">
-            <label class="hide control-label">The main stuff (note): </label>
-            <div class="controls">
-              <textarea placeholder="The main stuff (note)" cols="12" rows="5" name="contact_saying" required></textarea>
-            </div>
-          </div>
-          <div class="actions">
-            <button id="submit" class="btn-large btn-block">Send</button>
-          </div>
-        </form>
+        {{> sendEmail }}
       </article>
     </section>
   </div>
 </body>
+
+<template name="meContent">
+  <p>
+    Hey! My name is Ido Chetrit and I love programming. <3 <br />
+    I'm developing webapps in RubyOnRails, Nodejs (like this),
+     HTML5 (js/html/jquery) and more...
+  </p>
+  <p>
+    I also know to build native application in Java, C# and Objective-C. <br/> 
+    And building apps for Android and iOS! (^ ^)
+  </p>
+  <p><br/>
+    So if you need someone professional programmer to build your next project, contact me and i'll love to help you! :)
+  </p>
+</template>
+<template name="projects"></template>
+<template name="sendEmail">
+  <legend class="lead">Contact me</legend>
+  <form action="/contact" method="post" class="form-horizontal">
+    
+    <div class="control-group">
+      <label class="hide control-label">How people call you (name): </label>
+      <div class="controls">
+        <input placeholder="How people call you (name)" type="text" name="contact_name" required />
+      </div>
+    </div>
+    
+
+    <div class="control-group">
+      <label class="hide control-label">Way to communicate (email): </label>
+      <div class="controls">
+        <input placeholder="Way to communicate (email)" type="email" name="contact_email" required />
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="hide control-label">The main stuff (note): </label>
+      <div class="controls">
+        <textarea placeholder="The main stuff (note)" rows="8" name="contact_saying" class="span4" required></textarea>
+      </div>
+    </div>
+    <div class="form-actions">
+      <button id="send" class="btn-large btn-block">Send</button>
+    </div>
+  </form>
+</template>
