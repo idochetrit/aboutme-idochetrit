@@ -29,9 +29,22 @@ class App
   sendContact: (form)->
     # alert(form.serialize())
     alert("Your request sent")
+    
 if Meteor.isServer 
   Meteor.startup ->
     process.env.MAIL_URL = 'smtp://postmaster%40idochetrit.me:idomuse6@smtp.mailgun.org:587';
+sendMessage = (email, name, body)->
+  Email.send
+    from: email
+    to: "idochetrit.dev@gmail.com"
+    replyTo: email || undefined
+    subject: "idochetrit.me: #{name} sent you this email !"
+    text: body + "\n" + Meteor.absoluteUrl()
+
+Meteor.methods
+  'sendMessage': (e, n, b)->
+    if (Meteor.isServer)
+      sendMessage(e, n, b) 
 
 if Meteor.isClient 
   Meteor.startup ->
@@ -48,16 +61,5 @@ if Meteor.isClient
       email = $("#contact_email").val()
       Meteor.call('sendMessage', email, name, body)
 
-sendMessage = (email, name, body)->
-  console.log "sending..."
-  Email.send
-    from: email
-    to: "idochetrit.dev@gmail.com"
-    replyTo: email || undefined
-    subject: "idochetrit.me: #{name} sent you this email !"
-    text: body + "\n" + Meteor.absoluteUrl()
 
-Meteor.methods
-  'sendMessage': (e, n, b)->
-    if (Meteor.isServer)
-      sendMessage(e, n, b) 
+
