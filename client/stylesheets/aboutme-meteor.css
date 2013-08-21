@@ -1,0 +1,178 @@
+/* CSS declarations go here */
+/* 600 / 1280 */
+/* 1200 / 1280 */
+/* line 15, ../sass/aboutme-meteor.css.scss */
+html, body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* line 22, ../sass/aboutme-meteor.css.scss */
+body {
+  background: url("/images/body-BG2.png");
+  line-height: 1.7 !important;
+  font-size: 18px;
+}
+
+/* line 29, ../sass/aboutme-meteor.css.scss */
+header {
+  margin: 0 auto;
+}
+/* line 31, ../sass/aboutme-meteor.css.scss */
+header h1 {
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 5em;
+  margin: 0 auto;
+  font-family: "Domine" serif;
+  padding: 5px;
+}
+/* line 32, ../sass/aboutme-meteor.css.scss */
+header h1 .char2, header h1 .char3, header h1 .char4 {
+  color: #d4d9f9;
+}
+/* line 36, ../sass/aboutme-meteor.css.scss */
+header h1 .char6, header h1 .char7, header h1 .char8, header h1 .char9, header h1 .char10
+, header h1 .char11, header h1 .char12 {
+  color: #d84839;
+}
+
+/* line 49, ../sass/aboutme-meteor.css.scss */
+#navBar {
+  width: 100%;
+}
+/* line 51, ../sass/aboutme-meteor.css.scss */
+#navBar ul {
+  font-family: "Roboto" sans-serif;
+  float: right;
+  position: relative;
+  width: 46.875%;
+  border-radius: 3px 0 3px 0;
+  list-style-type: none;
+  background-color: #df5136;
+  padding-left: 10px;
+  margin-right: 25px;
+}
+/* line 61, ../sass/aboutme-meteor.css.scss */
+#navBar ul li {
+  padding: 10px;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 65, ../sass/aboutme-meteor.css.scss */
+#navBar ul li.button {
+  height: 35px;
+  width: 50px;
+}
+/* line 70, ../sass/aboutme-meteor.css.scss */
+#navBar ul li:hover {
+  background-color: rgba(247, 93, 72, 0.79);
+}
+/* line 74, ../sass/aboutme-meteor.css.scss */
+#navBar ul a {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 82, ../sass/aboutme-meteor.css.scss */
+section.mainArticles {
+  font-family: "Roboto" sans-serif;
+  width: 93.90625%;
+  max-width: 1000px;
+  min-height: 300px;
+  margin: 10px auto;
+  background-color: #f5f1f9;
+}
+/* line 89, ../sass/aboutme-meteor.css.scss */
+section.mainArticles article {
+  padding: 55px;
+  text-align: left;
+}
+
+/* line 95, ../sass/aboutme-meteor.css.scss */
+#glow_bar {
+  display: none;
+}
+
+/* line 99, ../sass/aboutme-meteor.css.scss */
+.glowbar-active {
+  background: url("/images/glowBar.png") no-repeat;
+  background-position: center bottom;
+}
+
+/* line 105, ../sass/aboutme-meteor.css.scss */
+.letterShadow {
+  -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* line 111, ../sass/aboutme-meteor.css.scss */
+.box {
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+/* line 119, ../sass/aboutme-meteor.css.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 128, ../sass/aboutme-meteor.css.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 132, ../sass/aboutme-meteor.css.scss */
+html[xmlns] .clearfix {
+  display: block;
+}
+
+/* line 136, ../sass/aboutme-meteor.css.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+@media screen and (max-width: 608px), screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  /* first break of the navbar */
+  /* line 144, ../sass/aboutme-meteor.css.scss */
+  #navBar ul {
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 150, ../sass/aboutme-meteor.css.scss */
+  #navBar ul li {
+    font-size: 0.9em;
+  }
+
+  /* line 155, ../sass/aboutme-meteor.css.scss */
+  section.mainArticles {
+    font-size: 0.85em;
+    width: 100%;
+  }
+
+  /* line 160, ../sass/aboutme-meteor.css.scss */
+  #top_logo {
+    font-size: 3em;
+  }
+
+  /* line 164, ../sass/aboutme-meteor.css.scss */
+  #glow_bar {
+    top: 110px;
+  }
+}
