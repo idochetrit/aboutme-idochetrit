@@ -32,10 +32,11 @@ class App
 
 
 Meteor.startup ->
-  process.env.MAIL_URL = 'smtp://postmaster%idochetrit.me:39-scrwymuw5@smtp.mailgun.org:587';
   app = new App()
+  
   #'-46.875%'
-
+if Meteor.isServer
+  process.env.MAIL_URL = 'smtp://postmaster%idochetrit.me:39-scrwymuw5@smtp.mailgun.org:587';
 if Meteor.isClient
   Template.sendEmail.events
     'click .send': ->
