@@ -86,33 +86,33 @@ section.mainArticles {
   max-width: 800px;
   min-height: 300px;
   margin: 10px auto;
-  background-color: #f5f1f9;
+  background-color: #f5f5f5;
 }
-/* line 89, ../sass/aboutme-meteor.css.scss */
+/* line 91, ../sass/aboutme-meteor.css.scss */
 section.mainArticles article {
   padding: 55px;
   text-align: left;
 }
 
-/* line 95, ../sass/aboutme-meteor.css.scss */
+/* line 97, ../sass/aboutme-meteor.css.scss */
 #glow_bar {
   display: none;
 }
 
-/* line 99, ../sass/aboutme-meteor.css.scss */
+/* line 101, ../sass/aboutme-meteor.css.scss */
 .glowbar-active {
   background: url("/images/glowBar.png") no-repeat;
   background-position: center bottom;
 }
 
-/* line 105, ../sass/aboutme-meteor.css.scss */
+/* line 107, ../sass/aboutme-meteor.css.scss */
 .letterShadow {
   -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* line 111, ../sass/aboutme-meteor.css.scss */
+/* line 113, ../sass/aboutme-meteor.css.scss */
 .box {
   border-radius: 2px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
@@ -120,7 +120,7 @@ section.mainArticles article {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
-/* line 119, ../sass/aboutme-meteor.css.scss */
+/* line 121, ../sass/aboutme-meteor.css.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -130,24 +130,24 @@ section.mainArticles article {
   height: 0;
 }
 
-/* line 128, ../sass/aboutme-meteor.css.scss */
+/* line 130, ../sass/aboutme-meteor.css.scss */
 .clearfix {
   display: inline-block;
 }
 
-/* line 132, ../sass/aboutme-meteor.css.scss */
+/* line 134, ../sass/aboutme-meteor.css.scss */
 html[xmlns] .clearfix {
   display: block;
 }
 
-/* line 136, ../sass/aboutme-meteor.css.scss */
+/* line 138, ../sass/aboutme-meteor.css.scss */
 * html .clearfix {
   height: 1%;
 }
 
 @media screen and (max-width: 608px), screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
   /* first break of the navbar */
-  /* line 144, ../sass/aboutme-meteor.css.scss */
+  /* line 146, ../sass/aboutme-meteor.css.scss */
   #navBar ul {
     box-shadow: none;
     padding: 0;
@@ -155,23 +155,23 @@ html[xmlns] .clearfix {
     width: 100%;
     text-align: center;
   }
-  /* line 150, ../sass/aboutme-meteor.css.scss */
+  /* line 152, ../sass/aboutme-meteor.css.scss */
   #navBar ul li {
     font-size: 0.9em;
   }
 
-  /* line 155, ../sass/aboutme-meteor.css.scss */
+  /* line 157, ../sass/aboutme-meteor.css.scss */
   section.mainArticles {
     font-size: 0.85em;
     width: 100%;
   }
 
-  /* line 160, ../sass/aboutme-meteor.css.scss */
+  /* line 162, ../sass/aboutme-meteor.css.scss */
   #top_logo {
     font-size: 3em;
   }
 
-  /* line 164, ../sass/aboutme-meteor.css.scss */
+  /* line 166, ../sass/aboutme-meteor.css.scss */
   #glow_bar {
     top: 110px;
   }
