@@ -27,7 +27,7 @@ header h1 {
   text-align: center;
   font-size: 5em;
   margin: 0 auto;
-  font-family: "Domine" serif;
+  font-family: "Domine";
   padding: 5px;
 }
 /* line 32, ../sass/aboutme-meteor.css.scss */
@@ -46,7 +46,7 @@ header h1 .char6, header h1 .char7, header h1 .char8, header h1 .char9, header h
 }
 /* line 51, ../sass/aboutme-meteor.css.scss */
 #navBar ul {
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto";
   float: right;
   position: relative;
   width: 46.875%;
@@ -81,7 +81,7 @@ header h1 .char6, header h1 .char7, header h1 .char8, header h1 .char9, header h
 
 /* line 82, ../sass/aboutme-meteor.css.scss */
 section.mainArticles {
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto";
   width: 93.90625%;
   max-width: 800px;
   min-height: 300px;
