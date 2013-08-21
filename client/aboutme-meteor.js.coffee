@@ -32,7 +32,7 @@ class App
     
 if Meteor.isServer 
   Meteor.startup ->
-    process.env.MAIL_URL = 'smtp://postmaster%40idochetrit.me:idomuse6@smtp.mailgun.org:587';
+    process.env.MAIL_URL = 'smtp://postmaster%40app17641980.mailgun.org:60whspzn8j44@smtp.mailgun.org:587';
 sendMessage = (email, name, body)->
   Email.send
     from: email
