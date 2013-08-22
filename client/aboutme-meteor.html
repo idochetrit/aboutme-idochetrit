@@ -5,11 +5,16 @@
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
   <link href="/stylesheets/aboutme-meteor.css" rel="stylesheet" type="text/css" />
-  <script src="//cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
-    <!--[if IE]>
-        <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <![endif]-->
+  <!--[if IE]>
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
 
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/spin.js/1.2.7/spin.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+  </script>
+  <![endif]-->
 </head>
 
 <body>
@@ -43,6 +48,7 @@
       </article>
     </section>
   </div>
+
 </body>
 
 <template name="meContent">
@@ -62,7 +68,7 @@
 <template name="projects"></template>
 <template name="sendEmail">
   <legend class="lead">Contact me</legend>
-  <form class="form-horizontal">
+  <form class="form-horizontal contact">
     
     <div class="control-group">
       <label class="hide control-label">How people call you (name): </label>

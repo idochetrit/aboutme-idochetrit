@@ -12,10 +12,6 @@ class App
     $("a#homeLink").on('click',  -> app.showPage('homePage', @))
     $("a#stuffLink").on('click',  -> app.showPage('stuffPage', @))
     $("a#contactLink").on('click', -> app.showPage('contactPage', @))
-    # $("form").submit (e)->
-    #   $form = $(@)
-    #   e.preventDefault()
-    #   app.sendContact($form)
   
   showPage: (page_name, aTag) ->
     $("section.mainArticles article").css 'display', 'none'
@@ -26,9 +22,6 @@ class App
     linkTag.closest('ul').find('li').removeClass('glowbar-active')
     linkTag.closest('li').addClass('glowbar-active')
 
-  sendContact: (form)->
-    # alert(form.serialize())
-    alert("Your request sent")
 
 Meteor.startup ->
   app = new App()  
@@ -38,8 +31,13 @@ if Meteor.isClient
   Template.sendEmail.events
     'submit': ->
       event.preventDefault()
-      alert("Mail sent !")
-      body = $("#contact_saying").val()
-      name = $("#contact_name").val()
-      email = $("#contact_email").val()
-      Meteor.call('sendMessage', email, name, body)
+      $form = $("form.contact").get(0)
+      spin = new Spinner().spin($form)
+      body = $form.contact_saying.value
+      name = $form.contact_name.value
+      email = $form.contact_email.value
+      Meteor.call 'sendMessage', email, name, body, (data)->
+        $("form.contact").find("input, textarea").val("")
+        spin.stop()
+        alert("email sent...")
+        
