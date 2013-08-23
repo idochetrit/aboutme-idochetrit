@@ -4,16 +4,22 @@ class App
     ## adds the glow bar effect to menu
     $("#navBar ul").css({ 'top': '-15px', "opacity": "0" })
     $("#top_logo").lettering()
-    $("#navBar ul").delay(250).animate({
+    $("#navBar ul").delay(500).animate({
         "opacity": "1",
-        'top': '0'}, {duration: 350, easing:"swing"})
+        'top': '0'}, {duration: 500, easing:"swing"})
     $('section.mainArticles article[id!="homePage"]').css 'display', 'none'
     setTimeout (-> app.placeGlowBar($("a#homeLink"))), 500
 
     $("a#homeLink").on('click',  -> app.showPage('homePage', @))
     $("a#stuffLink").on('click',  -> app.showPage('stuffPage', @))
     $("a#contactLink").on('click', -> app.showPage('contactPage', @))
-
+    $('body').flowtype
+      minimum   : 200
+      maximum   : 700
+      minFont   : 14
+      maxFont   : 18
+      fontRatio : 30
+      lineRatio : 1.5
   
   showPage: (page_name, aTag) ->
     $("section.mainArticles article").css 'display', 'none'
