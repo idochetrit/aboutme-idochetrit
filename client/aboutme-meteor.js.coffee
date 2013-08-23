@@ -12,6 +12,7 @@ class App
     $("a#homeLink").on('click',  -> app.showPage('homePage', @))
     $("a#stuffLink").on('click',  -> app.showPage('stuffPage', @))
     $("a#contactLink").on('click', -> app.showPage('contactPage', @))
+
   
   showPage: (page_name, aTag) ->
     $("section.mainArticles article").css 'display', 'none'
@@ -29,15 +30,24 @@ Meteor.startup ->
 
 if Meteor.isClient
   Template.sendEmail.events
-    'submit': ->
+    'submit form.contact': ->
       event.preventDefault()
-      $form = $("form.contact").get(0)
-      spin = new Spinner().spin($form)
-      body = $form.contact_saying.value
-      name = $form.contact_name.value
-      email = $form.contact_email.value
+      $form = $("form.contact")
+      spin = new Spinner().spin($("section.mainArticles").get(0))
+      $form.closest("article").css("opacity", 0.3)
+      body = $form.get(0).contact_saying.value
+      name = $form.get(0).contact_name.value
+      email = $form.get(0).contact_email.value
+      unless body || name || email then return
       Meteor.call 'sendMessage', email, name, body, (data)->
-        $("form.contact").find("input, textarea").val("")
+        send = $form.find("#send")
+        $form.find("input, textarea").val("")
+        send.html('Sent! ').append('<i class="icon-ok" />')
+        $form.closest("article").css("opacity", 1.0)
+        $form.on 'keypress', 'input, textarea', ->
+          send.html("Send").find('i').remove()
+          $form.off 'keypress'
+
         spin.stop()
-        alert("email sent...")
+        # alert("email sent...")
         

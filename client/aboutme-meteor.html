@@ -12,8 +12,8 @@
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/spin.js/1.2.7/spin.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
   <!--[if lt IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
-  </script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
   <![endif]-->
 </head>
 
@@ -52,18 +52,24 @@
 </body>
 
 <template name="meContent">
-  <p>
-    Hey! My name is Ido Chetrit and I love programming. <3 <br />
-    I'm developing webapps in RubyOnRails, Nodejs (like this),
-     HTML5 (js/html/jquery) and more...
-  </p>
-  <p>
-    I also know to build native application in Java, C# and Objective-C. <br/> 
-    And building apps for Android and iOS! (^ ^)
-  </p>
-  <p><br/>
-    So if you need someone professional programmer to build your next project, contact me and i'll love to help you! :)
-  </p>
+  <div class="row-fluid">
+    <img src="/images/profile_small.png" 
+    class="img-rounded pull-right span4" >
+    <div class="span8">
+      <p>
+        Hey! My name is Ido Chetrit and I love programming. <3 <br />
+        I'm developing webapps in RubyOnRails, Nodejs (like this),
+         HTML5 (js/html/jquery) and more...
+      </p><br />
+      <p>
+        I also know to build native application in Java, C# and Objective-C. <br/> 
+        And building apps for Android and iOS! (^ ^)
+      </p>
+      <p><br/>
+        So if you need someone professional programmer to build your next project, contact me and i'll love to help you! :)
+      </p>
+    </div>
+  </div>
 </template>
 <template name="projects"></template>
 <template name="sendEmail">
