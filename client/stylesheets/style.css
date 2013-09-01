@@ -185,17 +185,17 @@ html[xmlns] .clearfix {
   }
 
   /* line 174, ../sass/style.scss */
-  section.mainArticles {
+  section.page {
     min-height: 0;
     width: 100%;
     padding-bottom: 5px;
   }
   /* line 178, ../sass/style.scss */
-  section.mainArticles article {
+  section.page article {
     padding: 20px;
   }
   /* line 179, ../sass/style.scss */
-  section.mainArticles article img {
+  section.page article img {
     max-width: 30%;
   }
 
