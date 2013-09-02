@@ -1,7 +1,38 @@
 /* CSS declarations go here */
+@font-face {
+  font-family: 'Mono Social Icons Font';
+  src: url("/fonts/MonoSocialIconsFont-1.10.eot");
+  src: url("/fonts/MonoSocialIconsFont-1.10.eot?#iefix") format("embedded-opentype"), url("/fonts/MonoSocialIconsFont-1.10.woff") format("woff"), url("/fonts/MonoSocialIconsFont-1.10.ttf") format("truetype"), url("/fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont") format("svg");
+  src: url("/fonts/MonoSocialIconsFont-1.10.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 14, ../sass/style.scss */
+.symbol, a.symbol:before {
+  font-family: 'Mono Social Icons Font';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/* line 28, ../sass/style.scss */
+a.symbol:before {
+  content: attr(title);
+  margin-right: 0.3em;
+  font-size: 130%;
+}
+
 /* 600 / 1280 */
 /* 1200 / 1280 */
-/* line 15, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 html, body {
   margin: 0;
   border: 0;
@@ -9,36 +40,36 @@ html, body {
   height: 100%;
 }
 
-/* line 22, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 body {
   background: url("/images/random_grey_variations.png");
   line-height: 1.5 !important;
   font-size: 20px;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 h1, h2, h3, h4, h5, h6, p {
   font-family: inherit;
   font-size: inherit;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 h1 {
   font-size: 4em;
   line-height: 1em;
 }
 
-/* line 36, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 h3 {
   font-size: 3em;
   line-height: 1em;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 header {
   margin: 0 auto;
 }
-/* line 42, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 header h1 {
   color: white;
   display: block;
@@ -48,22 +79,22 @@ header h1 {
   font-family: "Domine";
   padding: 15px 0 15px 0;
 }
-/* line 43, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 header h1 .char2, header h1 .char3, header h1 .char4 {
   color: #d4d9f9;
 }
-/* line 47, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 header h1 .char6, header h1 .char7, header h1 .char8, header h1 .char9, header h1 .char10
 , header h1 .char11, header h1 .char12 {
   color: #d84839;
 }
 
-/* line 60, ../sass/style.scss */
-#navBar {
+/* line 92, ../sass/style.scss */
+.nav-bar {
   width: 100%;
 }
-/* line 62, ../sass/style.scss */
-#navBar ul {
+/* line 94, ../sass/style.scss */
+.nav-bar ul {
   font-family: "Roboto";
   float: right;
   position: relative;
@@ -74,68 +105,68 @@ header h1 .char6, header h1 .char7, header h1 .char8, header h1 .char9, header h
   padding-left: 10px;
   margin-right: 25px;
 }
-/* line 72, ../sass/style.scss */
-#navBar ul li {
+/* line 104, ../sass/style.scss */
+.nav-bar ul li {
   padding: 10px;
   display: inline-block;
   margin: 0 auto;
   position: relative;
 }
-/* line 76, ../sass/style.scss */
-#navBar ul li.button {
+/* line 108, ../sass/style.scss */
+.nav-bar ul li.button {
   height: 35px;
   width: 50px;
 }
-/* line 81, ../sass/style.scss */
-#navBar ul li:hover {
+/* line 113, ../sass/style.scss */
+.nav-bar ul li:hover {
   background-color: rgba(247, 93, 72, 0.79);
 }
-/* line 85, ../sass/style.scss */
-#navBar ul a {
+/* line 117, ../sass/style.scss */
+.nav-bar ul a {
   text-align: center;
   color: #fff;
   text-decoration: none;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 section.page {
   font-family: "Roboto";
-  width: 93.90625%;
-  max-width: 700px;
+  width: 94.6875%;
   min-height: 300px;
+  max-width: 700px;
   margin: 10px auto;
   background-color: #f5f5f5;
 }
-/* line 100, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 section.page article {
   padding: 45px;
   text-align: left;
 }
-/* line 101, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 section.page article img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 111, ../sass/style.scss */
-#glow_bar {
+/* line 143, ../sass/style.scss */
+#glow-bar {
   display: none;
 }
 
-/* line 115, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .glowbar-active {
   background: url("/images/glowBar.png") no-repeat;
   background-position: center bottom;
 }
 
-/* line 121, ../sass/style.scss */
-.letterShadow {
+/* line 153, ../sass/style.scss */
+.letter-shadow {
   -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* line 127, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 .box {
   border-radius: 2px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
@@ -143,7 +174,7 @@ section.page article img {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
-/* line 135, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -153,30 +184,48 @@ section.page article img {
   height: 0;
 }
 
-/* line 144, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .clearfix {
   display: inline-block;
 }
 
-/* line 148, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 html[xmlns] .clearfix {
   display: block;
 }
 
-/* line 152, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 * html .clearfix {
   height: 1%;
 }
 
+/* line 188, ../sass/style.scss */
+.social-icons {
+  width: 94.6875%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+/* line 192, ../sass/style.scss */
+.social-icons li {
+  padding: 0;
+}
+/* line 194, ../sass/style.scss */
+.social-icons li a {
+  text-decoration: none;
+  padding: 0;
+  color: #fff;
+  font-size: 40px;
+}
+
 @media screen and (max-width: 547px), screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
   /* first break of the navbar */
-  /* line 161, ../sass/style.scss */
+  /* line 208, ../sass/style.scss */
   header h1 {
     font-size: 3.5em;
   }
 
-  /* line 166, ../sass/style.scss */
-  #navBar ul {
+  /* line 213, ../sass/style.scss */
+  .nav-bar ul {
     box-shadow: none;
     padding: 0;
     margin: 0;
@@ -184,23 +233,29 @@ html[xmlns] .clearfix {
     text-align: center;
   }
 
-  /* line 174, ../sass/style.scss */
+  /* line 221, ../sass/style.scss */
+  .social-icons {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* line 226, ../sass/style.scss */
   section.page {
     min-height: 0;
     width: 100%;
     padding-bottom: 5px;
   }
-  /* line 178, ../sass/style.scss */
+  /* line 230, ../sass/style.scss */
   section.page article {
     padding: 20px;
   }
-  /* line 179, ../sass/style.scss */
+  /* line 231, ../sass/style.scss */
   section.page article img {
     max-width: 30%;
   }
 
-  /* line 185, ../sass/style.scss */
-  #glow_bar {
+  /* line 237, ../sass/style.scss */
+  #glow-bar {
     top: 110px;
   }
 }
