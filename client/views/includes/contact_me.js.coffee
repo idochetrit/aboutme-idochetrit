@@ -2,11 +2,15 @@ Template.contactMe.events
   'submit form.contact': ->
     event.preventDefault()
 
+
+    
+
     # pre-send effect conf
     $(".control-group.error").removeClass "error"
     $form = $("form.contact")
-    spin = new Spinner().spin($("section.mainArticles").get(0))
+    spin = new Spinner().spin($("section.page").get(0))
     $form.closest("article").css("opacity", 0.3)
+    
 
     # gather form info for sending to server
     body = $form.get(0).contact_saying.value

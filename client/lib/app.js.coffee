@@ -2,13 +2,13 @@ class App
   constructor: (template)->
     app = @
     ## adds the glow bar effect to menu
-    
+    $("#top_logo").lettering()
+
     if template
-      $("#top_logo").lettering()
       app.placeGlowBar $("a.#{template}")
       return
-    else
-      $("a").on 'click',  -> app.placeGlowBar $(@)
+      
+    $("a").on 'click',  -> app.placeGlowBar $(@)
     $("#navBar ul").css 'top': '-15px', 'opacity': 0.0
     $("#navBar ul").delay(500).animate(
         {"opacity": "1",'top': '0'},

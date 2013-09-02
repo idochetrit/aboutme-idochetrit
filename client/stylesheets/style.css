@@ -46,7 +46,7 @@ header h1 {
   margin: 0 auto;
   font-size: 4em;
   font-family: "Domine";
-  padding: 25px;
+  padding: 15px 0 15px 0;
 }
 /* line 43, ../sass/style.scss */
 header h1 .char2, header h1 .char3, header h1 .char4 {

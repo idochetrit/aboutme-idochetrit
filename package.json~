@@ -1,6 +1,0 @@
-{ "name": "idochetrit",
-	"version": "0.0.12",
-	"engines": {
-	    "node": "0.10.13"
-  	}
-}
