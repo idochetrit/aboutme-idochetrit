@@ -224,7 +224,7 @@ html[xmlns] .clearfix {
     background-size: 200px 200px;
   }
 }
-@media screen and (max-width: 547px), screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+@media screen and (max-width: 569px), screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
   /* first break of the navbar */
   /* line 216, ../sass/style.scss */
   header h1 {
