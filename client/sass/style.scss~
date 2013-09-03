@@ -200,14 +200,6 @@ html[xmlns] .clearfix {
   }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
-  body {
-    background: url('/images/random_grey_variations_@2X.png');
-    background-size: 200px 200px;
-  }
-}
-
-
 @media screen and (max-width:547px),
  screen and (-webkit-min-device-pixel-ratio : 1.5),
  screen and (min-device-pixel-ratio : 1.5) {
