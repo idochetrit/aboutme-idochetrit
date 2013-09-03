@@ -245,23 +245,27 @@ html[xmlns] .clearfix {
     text-align: center;
     margin: 0 auto;
   }
+  /* line 232, ../sass/style.scss */
+  .social-icons li a {
+    font-size: 30px;
+  }
 
-  /* line 234, ../sass/style.scss */
+  /* line 237, ../sass/style.scss */
   section.page {
     min-height: 0;
     width: 100%;
     padding-bottom: 5px;
   }
-  /* line 238, ../sass/style.scss */
+  /* line 241, ../sass/style.scss */
   section.page article {
     padding: 20px;
   }
-  /* line 239, ../sass/style.scss */
+  /* line 242, ../sass/style.scss */
   section.page article img {
     max-width: 30%;
   }
 
-  /* line 245, ../sass/style.scss */
+  /* line 248, ../sass/style.scss */
   #glow-bar {
     top: 110px;
   }
