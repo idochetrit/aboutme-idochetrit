@@ -217,14 +217,21 @@ html[xmlns] .clearfix {
   font-size: 40px;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 204, ../sass/style.scss */
+  body {
+    background: url("/images/random_grey_variations_@2X.png");
+    background-size: 200px 200px;
+  }
+}
 @media screen and (max-width: 547px), screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
   /* first break of the navbar */
-  /* line 208, ../sass/style.scss */
+  /* line 216, ../sass/style.scss */
   header h1 {
     font-size: 3.5em;
   }
 
-  /* line 213, ../sass/style.scss */
+  /* line 221, ../sass/style.scss */
   .nav-bar ul {
     box-shadow: none;
     padding: 0;
@@ -233,28 +240,28 @@ html[xmlns] .clearfix {
     text-align: center;
   }
 
-  /* line 221, ../sass/style.scss */
+  /* line 229, ../sass/style.scss */
   .social-icons {
     text-align: center;
     margin: 0 auto;
   }
 
-  /* line 226, ../sass/style.scss */
+  /* line 234, ../sass/style.scss */
   section.page {
     min-height: 0;
     width: 100%;
     padding-bottom: 5px;
   }
-  /* line 230, ../sass/style.scss */
+  /* line 238, ../sass/style.scss */
   section.page article {
     padding: 20px;
   }
-  /* line 231, ../sass/style.scss */
+  /* line 239, ../sass/style.scss */
   section.page article img {
     max-width: 30%;
   }
 
-  /* line 237, ../sass/style.scss */
+  /* line 245, ../sass/style.scss */
   #glow-bar {
     top: 110px;
   }
