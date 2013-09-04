@@ -65,11 +65,11 @@ h3 {
   line-height: 1em;
 }
 
-/* line 72, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 header {
   margin: 0 auto;
 }
-/* line 74, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 header h1 {
   color: white;
   display: block;
@@ -79,21 +79,21 @@ header h1 {
   font-family: "Domine";
   padding: 15px 0 15px 0;
 }
-/* line 75, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 header h1 .char2, header h1 .char3, header h1 .char4 {
   color: #d4d9f9;
 }
-/* line 79, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 header h1 .char6, header h1 .char7, header h1 .char8, header h1 .char9, header h1 .char10
 , header h1 .char11, header h1 .char12 {
   color: #d84839;
 }
 
-/* line 92, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .nav-bar {
   width: 100%;
 }
-/* line 94, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .nav-bar ul {
   font-family: "Roboto";
   float: right;
@@ -105,30 +105,30 @@ header h1 .char6, header h1 .char7, header h1 .char8, header h1 .char9, header h
   padding-left: 10px;
   margin-right: 25px;
 }
-/* line 104, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 .nav-bar ul li {
   padding: 10px;
   display: inline-block;
   margin: 0 auto;
   position: relative;
 }
-/* line 108, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 .nav-bar ul li.button {
   height: 35px;
   width: 50px;
 }
-/* line 113, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 .nav-bar ul li:hover {
   background-color: rgba(247, 93, 72, 0.79);
 }
-/* line 117, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .nav-bar ul a {
   text-align: center;
   color: #fff;
   text-decoration: none;
 }
 
-/* line 125, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 section.page {
   font-family: "Roboto";
   width: 94.6875%;
@@ -137,36 +137,36 @@ section.page {
   margin: 10px auto;
   background-color: #f5f5f5;
 }
-/* line 132, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 section.page article {
   padding: 45px;
   text-align: left;
 }
-/* line 133, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 section.page article img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 143, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 #glow-bar {
   display: none;
 }
 
-/* line 147, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .glowbar-active {
   background: url("/images/glowBar.png") no-repeat;
   background-position: center bottom;
 }
 
-/* line 153, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .letter-shadow {
   -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* line 159, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .box {
   border-radius: 2px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
@@ -174,7 +174,7 @@ section.page article img {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
-/* line 167, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -184,32 +184,32 @@ section.page article img {
   height: 0;
 }
 
-/* line 176, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 .clearfix {
   display: inline-block;
 }
 
-/* line 180, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 html[xmlns] .clearfix {
   display: block;
 }
 
-/* line 184, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 * html .clearfix {
   height: 1%;
 }
 
-/* line 188, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 .social-icons {
   width: 94.6875%;
   max-width: 700px;
   margin: 0 auto;
 }
-/* line 192, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .social-icons li {
   padding: 0;
 }
-/* line 194, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 .social-icons li a {
   text-decoration: none;
   padding: 0;
@@ -218,7 +218,7 @@ html[xmlns] .clearfix {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 204, ../sass/style.scss */
+  /* line 205, ../sass/style.scss */
   body {
     background: url("/images/random_grey_variations_@2X.png");
     background-size: 200px 200px;
@@ -226,12 +226,26 @@ html[xmlns] .clearfix {
 }
 @media screen and (max-width: 569px), screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
   /* first break of the navbar */
-  /* line 216, ../sass/style.scss */
+  /* line 217, ../sass/style.scss */
   header h1 {
     font-size: 3.5em;
   }
 
-  /* line 221, ../sass/style.scss */
+  /* line 222, ../sass/style.scss */
+  div.background {
+    perspective: 320px;
+    -webkit-perspective: 320px;
+    overflow: hidden;
+  }
+
+  /* line 228, ../sass/style.scss */
+  div.foreground {
+    margin: auto 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 234, ../sass/style.scss */
   .nav-bar ul {
     box-shadow: none;
     padding: 0;
@@ -240,32 +254,32 @@ html[xmlns] .clearfix {
     text-align: center;
   }
 
-  /* line 229, ../sass/style.scss */
+  /* line 242, ../sass/style.scss */
   .social-icons {
     text-align: center;
     margin: 0 auto;
   }
-  /* line 232, ../sass/style.scss */
+  /* line 245, ../sass/style.scss */
   .social-icons li a {
     font-size: 30px;
   }
 
-  /* line 237, ../sass/style.scss */
+  /* line 250, ../sass/style.scss */
   section.page {
     min-height: 0;
     width: 100%;
     padding-bottom: 5px;
   }
-  /* line 241, ../sass/style.scss */
+  /* line 254, ../sass/style.scss */
   section.page article {
     padding: 20px;
   }
-  /* line 242, ../sass/style.scss */
+  /* line 255, ../sass/style.scss */
   section.page article img {
     max-width: 30%;
   }
 
-  /* line 248, ../sass/style.scss */
+  /* line 261, ../sass/style.scss */
   #glow-bar {
     top: 110px;
   }
