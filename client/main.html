@@ -29,18 +29,21 @@
 </head>
 
 <body>
-  {{> header}}
-  <div class="wrapper">
-    <section class="page box">
-      <article id="page-article">
-        {{renderPage}}
-      </article>
-    </section>
-    <section class="social-icons">
-      {{> social}}
-    </section>
+  <div class="background">
+    <div class="foreground">
+      {{> header}}
+      <div class="wrapper">
+        <section class="page box">
+          <article id="page-article">
+            {{renderPage}}
+          </article>
+        </section>
+        <section class="social-icons">
+          {{> social}}
+        </section>
+      </div>
+    </div>
   </div>
-  
 </body>
 
 
