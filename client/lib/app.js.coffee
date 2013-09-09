@@ -14,8 +14,8 @@ class App
         {"opacity": "1",'top': '0'},
         {duration: 500, easing:"swing"})
     
-    if window.DeviceOrientationEvent
-      window.addEventListener('deviceorientation', app.parallax ,false)
+    # if window.DeviceOrientationEvent
+    #   window.addEventListener('deviceorientation', app.parallax ,false)
     $('body').flowtype
       minimum   : 200
       maximum   : 700
