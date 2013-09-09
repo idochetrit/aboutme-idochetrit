@@ -32,7 +32,7 @@ a.symbol:before {
 
 /* 600 / 1280 */
 /* 1200 / 1280 */
-/* line 47, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 html, body {
   margin: 0;
   border: 0;
@@ -40,36 +40,36 @@ html, body {
   height: 100%;
 }
 
-/* line 54, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 body {
   background: url("/images/random_grey_variations.png");
   line-height: 1.5 !important;
   font-size: 20px;
 }
 
-/* line 60, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 h1, h2, h3, h4, h5, h6, p {
   font-family: inherit;
   font-size: inherit;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 h1 {
   font-size: 4em;
   line-height: 1em;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 h3 {
   font-size: 3em;
   line-height: 1em;
 }
 
-/* line 73, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 header {
   margin: 0 auto;
 }
-/* line 75, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 header h1 {
   color: white;
   display: block;
@@ -79,21 +79,21 @@ header h1 {
   font-family: "Domine";
   padding: 15px 0 15px 0;
 }
-/* line 76, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 header h1 .char2, header h1 .char3, header h1 .char4 {
   color: #d4d9f9;
 }
-/* line 80, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 header h1 .char6, header h1 .char7, header h1 .char8, header h1 .char9, header h1 .char10
 , header h1 .char11, header h1 .char12 {
   color: #d84839;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .nav-bar {
   width: 100%;
 }
-/* line 95, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .nav-bar ul {
   font-family: "Roboto";
   float: right;
@@ -105,30 +105,30 @@ header h1 .char6, header h1 .char7, header h1 .char8, header h1 .char9, header h
   padding-left: 10px;
   margin-right: 25px;
 }
-/* line 105, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .nav-bar ul li {
   padding: 10px;
   display: inline-block;
   margin: 0 auto;
   position: relative;
 }
-/* line 109, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .nav-bar ul li.button {
   height: 35px;
   width: 50px;
 }
-/* line 114, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .nav-bar ul li:hover {
   background-color: rgba(247, 93, 72, 0.79);
 }
-/* line 118, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 .nav-bar ul a {
   text-align: center;
   color: #fff;
   text-decoration: none;
 }
 
-/* line 126, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 section.page {
   font-family: "Roboto";
   width: 94.6875%;
@@ -137,36 +137,43 @@ section.page {
   margin: 10px auto;
   background-color: #f5f5f5;
 }
-/* line 133, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 section.page article {
   padding: 45px;
   text-align: left;
 }
-/* line 134, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 section.page article img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 144, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 #glow-bar {
   display: none;
 }
 
-/* line 148, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 .glowbar-active {
   background: url("/images/glowBar.png") no-repeat;
   background-position: center bottom;
 }
 
 /* line 154, ../sass/style.scss */
+.lang-icon {
+  width: 32px;
+  float: right;
+  padding: 5px;
+}
+
+/* line 161, ../sass/style.scss */
 .letter-shadow {
   -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* line 160, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .box {
   border-radius: 2px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
@@ -174,7 +181,7 @@ section.page article img {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
-/* line 168, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -184,32 +191,32 @@ section.page article img {
   height: 0;
 }
 
-/* line 177, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .clearfix {
   display: inline-block;
 }
 
-/* line 181, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 html[xmlns] .clearfix {
   display: block;
 }
 
-/* line 185, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 * html .clearfix {
   height: 1%;
 }
 
-/* line 189, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 .social-icons {
   width: 94.6875%;
   max-width: 700px;
   margin: 0 auto;
 }
-/* line 193, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .social-icons li {
   padding: 0;
 }
-/* line 195, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .social-icons li a {
   text-decoration: none;
   padding: 0;
@@ -218,34 +225,20 @@ html[xmlns] .clearfix {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 205, ../sass/style.scss */
+  /* line 212, ../sass/style.scss */
   body {
     background: url("/images/random_grey_variations_@2X.png");
     background-size: 200px 200px;
   }
-
-  /* line 210, ../sass/style.scss */
-  div.background {
-    perspective: 320px;
-    -webkit-perspective: 320px;
-    overflow: hidden;
-  }
-
-  /* line 216, ../sass/style.scss */
-  div.foreground {
-    margin: auto 0;
-    width: 100%;
-    height: 100%;
-  }
 }
 @media screen and (max-width: 569px), screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
   /* first break of the navbar */
-  /* line 229, ../sass/style.scss */
+  /* line 236, ../sass/style.scss */
   header h1 {
     font-size: 3.5em;
   }
 
-  /* line 234, ../sass/style.scss */
+  /* line 241, ../sass/style.scss */
   .nav-bar ul {
     box-shadow: none;
     padding: 0;
@@ -254,32 +247,32 @@ html[xmlns] .clearfix {
     text-align: center;
   }
 
-  /* line 242, ../sass/style.scss */
+  /* line 249, ../sass/style.scss */
   .social-icons {
     text-align: center;
     margin: 0 auto;
   }
-  /* line 245, ../sass/style.scss */
+  /* line 252, ../sass/style.scss */
   .social-icons li a {
     font-size: 30px;
   }
 
-  /* line 250, ../sass/style.scss */
+  /* line 257, ../sass/style.scss */
   section.page {
     min-height: 0;
     width: 100%;
     padding-bottom: 5px;
   }
-  /* line 254, ../sass/style.scss */
+  /* line 261, ../sass/style.scss */
   section.page article {
     padding: 20px;
   }
-  /* line 255, ../sass/style.scss */
+  /* line 262, ../sass/style.scss */
   section.page article img {
     max-width: 30%;
   }
 
-  /* line 261, ../sass/style.scss */
+  /* line 268, ../sass/style.scss */
   #glow-bar {
     top: 110px;
   }

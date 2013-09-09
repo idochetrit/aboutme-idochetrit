@@ -151,6 +151,12 @@ section.page {
   background-position: center bottom;
 }
 
+.lang-icon {
+  width: 32px;
+  float: right;
+  padding: 5px;
+}
+
 $ltrShadowProps: 5px 5px rgba(0,0,0,.3px);
 .letter-shadow {
   -moz-box-shadow: $ltrShadowProps;
