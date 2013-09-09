@@ -1,0 +1,17 @@
+{
+  "me": "Me",
+  "projects": "Projects",
+  "contact_me": "Contact Me",
+  "me_p1": "Hey, my name is Ido Chetrit, I'm 21 yo web developer live in Ashkelon, Israel.",
+  "me_p2": "Building web apps mainly in Rails, and develop iOS apps. <br/> 
+        And also teaching computer science for school (Java, C#)...",
+  "me_p3": "So if you need developer for Ruby, Rails, Javascript, Wordpress and general web and iOS development.
+        please contact me here...",
+        
+  "contact_me_title": "Contact Me",
+  "cm_name": "How people call you (name)",
+  "cm_email": "Way to communicate (email)",
+  "cm_notes": "The main stuff (note)",
+  "cm_send": "Send"
+
+}
