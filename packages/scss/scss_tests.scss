@@ -1,0 +1,10 @@
+@import "scss_tests_constants.scssimport";
+
+#sass-tests { zoom: 1; /* prop this rule open */ }
+
+$dashy: dashed;
+
+.sass-dashy-left-border {
+  border-left: $dashy;
+  border-right: $external-dotty;
+}
