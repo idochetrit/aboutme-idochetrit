@@ -1,54 +1,247 @@
-/*
-Syntax error: Undefined mixin 'font-face'.
-        on line 1 of c:/Users/ido/Copy/Projects/Meteorjs/aboutme-meteor/client/sass/style.scss, in `font-face'
-        from line 1 of c:/Users/ido/Copy/Projects/Meteorjs/aboutme-meteor/client/sass/style.scss
+/* 600 / 1280 */
+/* 1200 / 1280 */
+/* line 15, ../sass/style.scss */
+html, body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  height: 100%;
+}
 
-1: c:/Users/ido/Copy/Projects/Meteorjs/aboutme-meteor/client/sass/style.scss
+/* line 22, ../sass/style.scss */
+body {
+  background: url("/images/random_grey_variations.png");
+  line-height: 1.5 !important;
+  font-size: 20px;
+}
 
-Backtrace:
-c:/Users/ido/Copy/Projects/Meteorjs/aboutme-meteor/client/sass/style.scss:1:in `font-face'
-c:/Users/ido/Copy/Projects/Meteorjs/aboutme-meteor/client/sass/style.scss:1
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `map'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:7:in `visit'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/root_node.rb:20:in `render'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/engine.rb:315:in `_render'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/sass-3.2.10/lib/sass/engine.rb:262:in `render'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:68:in `perform'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/bin/compass:23:in `load'
-c:/Users/ido/.pik/rubies/Ruby-193-p429/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined mixin 'font-face'.\A         on line 1 of c:/Users/ido/Copy/Projects/Meteorjs/aboutme-meteor/client/sass/style.scss, in `font-face'\A         from line 1 of c:/Users/ido/Copy/Projects/Meteorjs/aboutme-meteor/client/sass/style.scss\A \A 1: c:/Users/ido/Copy/Projects/Meteorjs/aboutme-meteor/client/sass/style.scss"; }
+/* line 28, ../sass/style.scss */
+h1, h2, h3, h4, h5, h6, p {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* line 32, ../sass/style.scss */
+h1 {
+  font-size: 4em;
+  line-height: 1em;
+}
+
+/* line 36, ../sass/style.scss */
+h3 {
+  font-size: 3em;
+  line-height: 1em;
+}
+
+/* line 41, ../sass/style.scss */
+header {
+  margin: 0 auto;
+}
+/* line 43, ../sass/style.scss */
+header h1 {
+  color: white;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 4em;
+  font-family: "Domine";
+  padding: 15px 0 15px 0;
+}
+/* line 44, ../sass/style.scss */
+header h1 .char2, header h1 .char3, header h1 .char4 {
+  color: #d4d9f9;
+}
+/* line 48, ../sass/style.scss */
+header h1 .char6, header h1 .char7, header h1 .char8, header h1 .char9, header h1 .char10
+, header h1 .char11, header h1 .char12 {
+  color: #d84839;
+}
+
+/* line 61, ../sass/style.scss */
+.nav-bar {
+  width: 100%;
+}
+/* line 63, ../sass/style.scss */
+.nav-bar ul {
+  font-family: "Roboto";
+  float: right;
+  position: relative;
+  width: 46.875%;
+  border-radius: 3px 0 3px 0;
+  list-style-type: none;
+  background-color: #df5136;
+  padding-left: 10px;
+  margin-right: 25px;
+}
+/* line 73, ../sass/style.scss */
+.nav-bar ul li {
+  padding: 10px;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 77, ../sass/style.scss */
+.nav-bar ul li.button {
+  height: 35px;
+  width: 50px;
+}
+/* line 82, ../sass/style.scss */
+.nav-bar ul li:hover {
+  background-color: rgba(247, 93, 72, 0.79);
+}
+/* line 86, ../sass/style.scss */
+.nav-bar ul a {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 94, ../sass/style.scss */
+section.page {
+  font-family: "Roboto";
+  width: 94.6875%;
+  min-height: 300px;
+  max-width: 700px;
+  margin: 10px auto;
+  background-color: #f5f5f5;
+}
+/* line 101, ../sass/style.scss */
+section.page article {
+  padding: 45px;
+  text-align: left;
+}
+/* line 102, ../sass/style.scss */
+section.page article img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 112, ../sass/style.scss */
+#glow-bar {
+  display: none;
+}
+
+/* line 116, ../sass/style.scss */
+.glowbar-active {
+  background: url("/images/glowBar.png") no-repeat;
+  background-position: center bottom;
+}
+
+/* line 121, ../sass/style.scss */
+.lang-icon {
+  width: 32px;
+  float: right;
+  padding: 5px;
+}
+
+/* line 128, ../sass/style.scss */
+.letter-shadow {
+  -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* line 134, ../sass/style.scss */
+.box {
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+/* line 142, ../sass/style.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 151, ../sass/style.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 155, ../sass/style.scss */
+html[xmlns] .clearfix {
+  display: block;
+}
+
+/* line 159, ../sass/style.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 163, ../sass/style.scss */
+.social-icons {
+  width: 94.6875%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+/* line 167, ../sass/style.scss */
+.social-icons li {
+  padding: 0;
+}
+/* line 169, ../sass/style.scss */
+.social-icons li a.social-icon {
+  text-decoration: none;
+  padding: 0;
+  color: #fff;
+  font-size: 44px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 179, ../sass/style.scss */
+  body {
+    background: url("/images/random_grey_variations_@2X.png");
+    background-size: 200px 200px;
+  }
+}
+@media screen and (max-width: 569px), screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
+  /* first break of the navbar */
+  /* line 203, ../sass/style.scss */
+  header h1 {
+    font-size: 3.5em;
+  }
+
+  /* line 208, ../sass/style.scss */
+  .nav-bar ul {
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 216, ../sass/style.scss */
+  .social-icons {
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* line 219, ../sass/style.scss */
+  .social-icons li a {
+    font-size: 30px;
+  }
+
+  /* line 224, ../sass/style.scss */
+  section.page {
+    min-height: 0;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  /* line 228, ../sass/style.scss */
+  section.page article {
+    padding: 20px;
+  }
+  /* line 229, ../sass/style.scss */
+  section.page article img {
+    max-width: 30%;
+  }
+
+  /* line 235, ../sass/style.scss */
+  #glow-bar {
+    top: 110px;
+  }
+}
