@@ -127,21 +127,28 @@ section.page article img {
   background-position: center bottom;
 }
 
-/* line 121, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+/* line 125, ../sass/style.scss */
 .lang-icon {
   width: 32px;
-  float: right;
+  float: left;
+  bottom: 0;
   padding: 5px;
 }
 
-/* line 128, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .letter-shadow {
   -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* line 134, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 .box {
   border-radius: 2px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
@@ -149,7 +156,7 @@ section.page article img {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
-/* line 142, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -159,32 +166,32 @@ section.page article img {
   height: 0;
 }
 
-/* line 151, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .clearfix {
   display: inline-block;
 }
 
-/* line 155, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 html[xmlns] .clearfix {
   display: block;
 }
 
-/* line 159, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 * html .clearfix {
   height: 1%;
 }
 
-/* line 163, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 .social-icons {
   width: 94.6875%;
   max-width: 700px;
   margin: 0 auto;
 }
-/* line 167, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .social-icons li {
   padding: 0;
 }
-/* line 169, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .social-icons li a.social-icon {
   text-decoration: none;
   padding: 0;
@@ -193,7 +200,7 @@ html[xmlns] .clearfix {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 179, ../sass/style.scss */
+  /* line 184, ../sass/style.scss */
   body {
     background: url("/images/random_grey_variations_@2X.png");
     background-size: 200px 200px;
@@ -201,12 +208,12 @@ html[xmlns] .clearfix {
 }
 @media screen and (max-width: 569px), screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
   /* first break of the navbar */
-  /* line 203, ../sass/style.scss */
+  /* line 208, ../sass/style.scss */
   header h1 {
     font-size: 3.5em;
   }
 
-  /* line 208, ../sass/style.scss */
+  /* line 213, ../sass/style.scss */
   .nav-bar ul {
     box-shadow: none;
     padding: 0;
@@ -215,32 +222,32 @@ html[xmlns] .clearfix {
     text-align: center;
   }
 
-  /* line 216, ../sass/style.scss */
+  /* line 221, ../sass/style.scss */
   .social-icons {
     text-align: center;
     margin: 0 auto;
   }
-  /* line 219, ../sass/style.scss */
+  /* line 224, ../sass/style.scss */
   .social-icons li a {
     font-size: 30px;
   }
 
-  /* line 224, ../sass/style.scss */
+  /* line 229, ../sass/style.scss */
   section.page {
     min-height: 0;
     width: 100%;
     padding-bottom: 5px;
   }
-  /* line 228, ../sass/style.scss */
+  /* line 233, ../sass/style.scss */
   section.page article {
     padding: 20px;
   }
-  /* line 229, ../sass/style.scss */
+  /* line 234, ../sass/style.scss */
   section.page article img {
     max-width: 30%;
   }
 
-  /* line 235, ../sass/style.scss */
+  /* line 240, ../sass/style.scss */
   #glow-bar {
     top: 110px;
   }
