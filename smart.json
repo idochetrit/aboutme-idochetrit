@@ -1,9 +1,10 @@
 {
   "packages": {
-    "router": {},
     "accounts-ui-bootstrap-dropdown": {},
     "spin": {},
     "font-awesome": {},
-    "i18next-meteor": {}
+    "i18next-meteor": {},
+    "scss": {},
+    "iron-router": {}
   }
 }
