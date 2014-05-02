@@ -1,5 +1,5 @@
-Meteor.startup () ->
-  app = new App()
 
-Template.header.rendered = () ->
-  app = new App(Meteor.Router._page)
+Template.header.rendered = ->
+  Deps.autorun ->
+    current_template = Router.current() && Router.current().route.name
+    app.route(current_template || 'about')

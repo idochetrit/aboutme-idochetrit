@@ -5,3 +5,9 @@ accounts-ui-bootstrap-dropdown
 spin
 font-awesome
 i18next-meteor
+/router
+/accounts-ui-bootstrap-dropdown
+/spin
+/scss
+/iron-router
+/blaze-layout
