@@ -156,7 +156,13 @@ footer {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
-/* line 147, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* line 151, ../sass/style.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -166,32 +172,32 @@ footer {
   height: 0;
 }
 
-/* line 156, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .clearfix {
   display: inline-block;
 }
 
-/* line 160, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 html[xmlns] .clearfix {
   display: block;
 }
 
-/* line 164, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 * html .clearfix {
   height: 1%;
 }
 
-/* line 168, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .social-icons {
   width: 94.6875%;
   max-width: 700px;
   margin: 0 auto;
 }
-/* line 172, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .social-icons li {
   padding: 0;
 }
-/* line 174, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .social-icons li a.social-icon {
   text-decoration: none;
   padding: 0;
@@ -200,7 +206,7 @@ html[xmlns] .clearfix {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 186, ../sass/style.scss */
+  /* line 190, ../sass/style.scss */
   body {
     background: url("/images/random_grey_variations_@2X.png");
     background-size: 200px 200px;
@@ -208,12 +214,12 @@ html[xmlns] .clearfix {
 }
 @media screen and (max-width: 569px) {
   /* first break of the navbar */
-  /* line 197, ../sass/style.scss */
+  /* line 201, ../sass/style.scss */
   header h1 {
     font-size: 3.5em;
   }
 
-  /* line 202, ../sass/style.scss */
+  /* line 206, ../sass/style.scss */
   .nav-bar ul {
     box-shadow: none;
     padding: 0;
@@ -222,32 +228,32 @@ html[xmlns] .clearfix {
     text-align: center;
   }
 
-  /* line 210, ../sass/style.scss */
+  /* line 214, ../sass/style.scss */
   .social-icons {
     text-align: center;
     margin: 0 auto;
   }
-  /* line 213, ../sass/style.scss */
+  /* line 217, ../sass/style.scss */
   .social-icons li a {
     font-size: 30px;
   }
 
-  /* line 218, ../sass/style.scss */
+  /* line 222, ../sass/style.scss */
   section.page {
     min-height: 0;
     width: 100%;
     padding-bottom: 5px;
   }
-  /* line 222, ../sass/style.scss */
+  /* line 226, ../sass/style.scss */
   section.page article {
     padding: 20px;
   }
-  /* line 223, ../sass/style.scss */
+  /* line 227, ../sass/style.scss */
   section.page article img {
     max-width: 30%;
   }
 
-  /* line 229, ../sass/style.scss */
+  /* line 233, ../sass/style.scss */
   #glow-bar {
     top: 110px;
   }

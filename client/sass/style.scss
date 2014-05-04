@@ -143,6 +143,10 @@ $ltrShadowProps: 5px 5px rgba(0,0,0,.3px);
   -moz-box-shadow: 0 0 5px rgba(0,0,0,.4);
 }
 
+.list-unstyled {
+padding-left: 0;
+list-style: none;
+}
 
 .clearfix:after {
   content: ".";
