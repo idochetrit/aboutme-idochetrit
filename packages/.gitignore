@@ -11,3 +11,6 @@ i18next-meteor
 /scss
 /iron-router
 /blaze-layout
+/font-awesome
+/meteor-newrelic
+env

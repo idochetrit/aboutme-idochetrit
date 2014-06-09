@@ -5,6 +5,7 @@
     "font-awesome": {},
     "i18next-meteor": {},
     "scss": {},
-    "iron-router": {}
+    "iron-router": {},
+    "meteor-newrelic": {}
   }
 }
