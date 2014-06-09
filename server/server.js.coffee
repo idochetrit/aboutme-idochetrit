@@ -1,3 +1,8 @@
+Meteor.startup ->
+  # sets new relic
+  require('newrelic');
+
+
 Meteor.methods
   # method that send mail with the details...
   'sendMessage': (email, name, body)->
