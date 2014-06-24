@@ -6,6 +6,6 @@
     "i18next-meteor": {},
     "scss": {},
     "iron-router": {},
-    "meteor-newrelic": {}
+    "kadira": {}
   }
 }
