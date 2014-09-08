@@ -36,7 +36,6 @@ minimongo@1.0.2
 mongo-livedata@1.0.4
 mongo@1.0.4
 mrt:i18next-meteor@1.6.0
-mrt:meteor-newrelic@1.0.1
 observe-sequence@1.0.2
 ordered-dict@1.0.0
 random@1.0.0
