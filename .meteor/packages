@@ -9,5 +9,5 @@ bootstrap
 standard-app-packages
 email
 mrt:i18next-meteor@1.6.0
-arunoda:kadira@2.4.4
 iron:router
+meteorhacks:kadira
