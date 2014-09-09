@@ -1,5 +1,4 @@
 application-configuration@1.0.1
-arunoda:kadira@2.4.10
 autoupdate@1.0.6
 binary-heap@1.0.0
 blaze-tools@1.0.0
@@ -27,9 +26,12 @@ iron:router@0.9.3
 jquery@1.0.0
 json@1.0.0
 livedata@1.0.9
+localstorage@1.0.0
 logging@1.0.2
 meteor-platform@1.0.2
 meteor@1.0.3
+meteorhacks:kadira-binary-deps@1.0.1
+meteorhacks:kadira@2.7.2
 minifiers@1.0.2
 minimongo@1.0.2
 mongo-livedata@1.0.4
